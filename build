@@ -1,0 +1,90 @@
+#! /bin/bash
+oxo -t 'Audiolet API Documentation' \
+    -d 'JavaScript library for audio synthesis and composition.' \
+    -s 'Core' \
+    -a 'Core Audiolet classes' \
+    -i ../trunk/src/core/Audiolet.js \
+       ../trunk/src/core/AudioletNode.js \
+       ../trunk/src/core/AudioletGroup.js \
+       ../trunk/src/core/AudioletBuffer.js \
+       ../trunk/src/core/AudioletParameter.js \
+       ../trunk/src/core/AudioletInput.js \
+       ../trunk/src/core/AudioletOutput.js \
+       ../trunk/src/core/AudioletDestination.js \
+       ../trunk/src/core/AudioletDevice.js \
+       ../trunk/src/core/Scheduler.js \
+       ../trunk/src/core/PassThroughNode.js \
+       ../trunk/src/core/ParameterNode.js \
+       ../trunk/src/core/PriorityQueue.js \
+       ../trunk/src/core/Extend.js \
+       ../trunk/src/core/TypedArrayShim.js \
+    -s 'DSP' \
+    -a 'Audio generation and processing nodes' \
+    -i ../trunk/src/dsp/Sine.js \
+       ../trunk/src/dsp/Triangle.js \
+       ../trunk/src/dsp/Saw.js \
+       ../trunk/src/dsp/Square.js \
+       ../trunk/src/dsp/Pulse.js \
+       ../trunk/src/dsp/WhiteNoise.js \
+       ../trunk/src/dsp/Envelope.js \
+       ../trunk/src/dsp/ADSREnvelope.js \
+       ../trunk/src/dsp/PercussiveEnvelope.js \
+       ../trunk/src/dsp/BufferPlayer.js \
+       ../trunk/src/dsp/Gain.js \
+       ../trunk/src/dsp/Pan.js \
+       ../trunk/src/dsp/UpMixer.js \
+       ../trunk/src/dsp/CrossFade.js \
+       ../trunk/src/dsp/LinearCrossFade.js \
+       ../trunk/src/dsp/Limiter.js \
+       ../trunk/src/dsp/BiquadFilter.js \
+       ../trunk/src/dsp/LowPassFilter.js \
+       ../trunk/src/dsp/HighPassFilter.js \
+       ../trunk/src/dsp/BandPassFilter.js \
+       ../trunk/src/dsp/BandRejectFilter.js \
+       ../trunk/src/dsp/AllPassFilter.js \
+       ../trunk/src/dsp/DCFilter.js \
+       ../trunk/src/dsp/Lag.js \
+       ../trunk/src/dsp/Delay.js \
+       ../trunk/src/dsp/FeedbackDelay.js \
+       ../trunk/src/dsp/CombFilter.js \
+       ../trunk/src/dsp/DampedCombFilter.js \
+       ../trunk/src/dsp/Reverb.js \
+       ../trunk/src/dsp/SoftClip.js \
+       ../trunk/src/dsp/BitCrusher.js \
+       ../trunk/src/dsp/Amplitude.js \
+       ../trunk/src/dsp/DiscontinuityDetector.js \
+       ../trunk/src/dsp/BadValueDetector.js \
+       ../trunk/src/dsp/TriggerControl.js \
+       ../trunk/src/dsp/FFT.js \
+       ../trunk/src/dsp/IFFT.js \
+    -s 'Operators' \
+    -a 'Mathematical operator nodes' \
+    -i ../trunk/src/operators/Add.js \
+       ../trunk/src/operators/Subtract.js \
+       ../trunk/src/operators/Multiply.js \
+       ../trunk/src/operators/Divide.js \
+       ../trunk/src/operators/Modulo.js \
+       ../trunk/src/operators/Reciprocal.js \
+       ../trunk/src/operators/MulAdd.js \
+       ../trunk/src/operators/Tanh.js \
+    -s 'Scales' \
+    -a 'Musical scales' \
+    -i ../trunk/src/scale/Scale.js \
+       ../trunk/src/scale/MajorScale.js \
+       ../trunk/src/scale/MinorScale.js \
+    -s 'Tunings' \
+    -a 'Musical tunings' \
+    -i ../trunk/src/tuning/Tuning.js \
+       ../trunk/src/tuning/EqualTemeperamentTuning.js \
+    -s 'Patterns' \
+    -a 'Schedulable patterns of values' \
+    -i ../trunk/src/pattern/Pattern.js \
+       ../trunk/src/pattern/PSequence.js \
+       ../trunk/src/pattern/PSeries.js \
+       ../trunk/src/pattern/PShuffle.js \
+       ../trunk/src/pattern/PArithmetic.js \
+       ../trunk/src/pattern/PGeometric.js \
+       ../trunk/src/pattern/PChoose.js \
+       ../trunk/src/pattern/PRandom.js \
+       ../trunk/src/pattern/PProxy.js \
+    -o api.html
